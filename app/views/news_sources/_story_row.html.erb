@@ -1,0 +1,5 @@
+<% if story.content %>
+  <%= link_to '#', story.title, :class=>'hover-info newsStoryHeadline embedStoryLink' %>
+<% else %>
+  <%= link_to '#', story.title, :class=>'hover-info newsStoryHeadline',  :target=>"_blank", :rel=>"noreferrer"%>
+<% end %>

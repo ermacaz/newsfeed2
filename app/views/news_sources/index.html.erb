@@ -1,0 +1,9 @@
+<div class=container-fluid style="padding-top: 1em; background-color: #282a36">
+  <% @sources.each_slice(3) do |news_source_set| %>
+  <div class="row">
+      <% news_source_set.each do |news_source| %>
+        <%= render :partial=>'news_sources/news_source', :locals=>{:news_source=>news_source} %>
+      <% end %>
+    </div>
+  <% end %>
+</div>
